@@ -33,7 +33,9 @@ output_List = []
 for i in range(0,len(User_Input_List_int)):
     output_List.insert (i , Q(User_Input_List_int[i]) )
 
-print(output_List)
+output_List = [str(i) for i in output_List]
+
+print(",".join(output_List))
 
 
 
